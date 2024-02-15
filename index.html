@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a exibição responsiva -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Importa os ícones Bootstrap -->
+    <link rel="stylesheet" href="/styles.css"> <!-- Importa o arquivo de estilo personalizado (styles.css) -->
+    <title>Player music</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <div class="music-container"> <!-- Contêiner principal do reprodutor de música -->
+        <h4 id="playlist-title">Player song com Javascript</h4> <!-- Título da playlist -->
+        <img id='cover' alt="Disc cover"></img> <!-- Imagem da capa do álbum -->
+        <audio id="audio"></audio>  <!-- Elemento de áudio para reprodução de música -->
+        <div id="below-cover">  <!-- Seção abaixo da capa do álbum -->
+            <div id="song-info"> <!-- Informações sobre a música atual -->
+                <div id="song-name">Nome da música</div> <!-- Nome da música -->
+                <div id="band-name" class="light-color">Nome da banda</div> <!-- Nome da banda com classe de cor clara -->
+            </div>
+            <button id='like' class="button light-color"> <!-- Botão de curtir com classe de cor clara -->
+                <i class="bi bi-heart"></i> <!-- Ícone de coração Bootstrap -->
+            </button>
+        </div>
+        <div id="progress-container"> <!-- Contêiner da barra de progresso da música -->
+            <div id="progress-bar"> <!-- Barra de progresso -->
+                <div id="current-progress"></div> <!-- Indicador de progresso atual -->
+                <div id="time-box"> <!-- Contêiner para exibir o tempo decorrido e total da música -->
+                    <div id="song-time">00:00:00</div> <!-- Tempo decorrido da música -->
+                    <div id="total-time">00:00:00</div> <!-- Tempo total da música -->
+                </div>
+            </div>
+        </div>
+        <div id="button-container"> <!-- Contêiner dos botões de controle -->
+            <button id="shuffle" class="button"> <!-- Botão de embaralhar -->
+                <i class="bi bi-shuffle"></i> <!-- Ícone de embaralhar Bootstrap -->
+            </button>
+            <button id="previous" class="button button-navigate"> <!-- Botão de música anterior -->
+                <i class="bi bi-skip-start-fill"></i> <!-- Ícone de retroceder Bootstrap -->
+            </button>
+            <button id="play" class="button button-biggest"> <!-- Botão de reprodução -->
+                <i class="bi bi-play-circle-fill"></i> <!-- Ícone de reprodução Bootstrap -->
+            </button>
+            <button id="pause" class="button button-biggest"> <!-- Botão de pausa -->
+                <i class="bi bi-plause-circle-fill"></i> <!-- Ícone de pausa Bootstrap -->
+            </button>
+            <button id="next" class="button button-navigate"> <!-- Botão de próxima música -->
+                <i class="bi bi-skip-end-fill"></i> <!-- Ícone de avançar Bootstrap -->
+            </button>
+            <button id="repeat" class="button"> <!-- Botão de repetir -->
+                <i class="bi bi-repeat"></i> <!-- Ícone de repetir Bootstrap -->
+            </button>
+        </div>
+    </div>
+</body>
+<script src="/script.js"></script> <!-- Importa o script JavaScript (script.js) -->
+</html>

@@ -1,0 +1,180 @@
+/* Importa a fonte 'Bebas Neue' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Estilizações gerais do corpo do documento */
+body {
+    background-image: linear-gradient(rgb(59, 88, 93), rgb(29, 40, 42));
+    height: 100vh;  /* Define a altura do corpo como 100% da altura da viewport */
+    color: white;  /* Define a cor do texto como branco */
+    font-family: 'Bebas Neue', sans-serif;  /* Define a fonte do texto */
+    display: flex;  /* Usa o modelo de layout flexível para o corpo do documento */
+    flex-direction: column;  /* Define a direção principal como coluna */
+    align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+    letter-spacing: 2px;  /* Adiciona espaçamento entre as letras */
+    padding: 1em;  /* Adiciona preenchimento em todas as direções */
+}
+
+/* Estilizações para a seção abaixo da capa */
+#below-cover {
+    display: flex;  /* Usa o modelo de layout flexível para a seção abaixo da capa */
+    flex-direction: row;  /* Define a direção principal como linha */
+    justify-content: space-between;  /* Distribui o espaço entre os elementos */
+    align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+    margin: 3em 0 1em 0;  /* Adiciona margens nas direções superior, inferior, direita e esquerda */
+}
+
+/* Estilizações para botões */
+button {
+    background-color: inherit;  /* Usa a cor de fundo herdada */
+    border: none;  /* Remove a borda do botão */
+    color: inherit;  /* Usa a cor herdada para o texto */
+    cursor: pointer;  /* Muda o cursor para indicar interatividade */
+}
+
+/* Estilizações para o contêiner de botões */
+#button-container {
+    display: flex;  /* Usa o modelo de layout flexível para o contêiner de botões */
+    flex-direction: row;  /* Define a direção principal como linha */
+    justify-content: space-around;  /* Distribui o espaço ao redor dos elementos */
+    align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+}
+
+/* Estilizações gerais para botões */
+.button {
+    font-size: 1.5em;  /* Define o tamanho da fonte */
+}
+
+/* Estilizações específicas para botões de navegação */
+.button-navigate {
+    font-size: 3em;  /* Define um tamanho maior para botões de navegação */
+}
+
+/* Estilizações específicas para o maior botão */
+.button-biggest {
+    font-size: 4em;  /* Define um tamanho ainda maior para o maior botão */
+}
+
+/* Estilizações para a capa */
+#cover {
+    width: 100%;  /* Define a largura como 100% */
+    max-width: 450px;  /* Define a largura máxima como 450 pixels */
+    border: 5px solid white;  /* Adiciona uma borda branca */
+}
+
+/* Estilizações para o título da playlist */
+#playlist-title {
+    display: flex;  /* Usa o modelo de layout flexível para o título da playlist */
+    flex-direction: row;  /* Define a direção principal como linha */
+    justify-content: center;  /* Centraliza o título horizontalmente */
+    margin: 1em 0 2em 0;  /* Adiciona margens nas direções superior, inferior, direita e esquerda */
+    padding-top: 40px;  /* Adiciona preenchimento na parte superior */
+    font-size: 30px;  /* Define o tamanho da fonte */
+}
+
+/* Estilizações para o nome da música */
+#song-name {
+    font-size: 1.5em;  /* Define o tamanho da fonte */
+    font-weight: bolder;  /* Define a espessura da fonte como negrito */
+}
+
+/* Estilizações para cores claras */
+.light-color {
+    color: rgb(139, 153, 156);  /* Define uma cor de texto mais clara */
+}
+
+/* Estilizações para a barra de progresso */
+#progress-bar {
+    background-color: rgb(139, 153, 156);  /* Define a cor de fundo da barra de progresso */
+    height: 3px;  /* Define a altura da barra de progresso */
+    width: 100%;  /* Define a largura como 100% */
+    border-radius: 15px;  /* Adiciona bordas arredondadas */
+    margin-top: 1.5em;  /* Adiciona margem superior */
+    cursor: pointer;  /* Muda o cursor para indicar interatividade */
+}
+
+/* Estilizações para o progresso atual */
+#current-progress {
+    --progress: 0%;  /* Define uma variável de progresso inicial */
+    background-color: white;  /* Define a cor de fundo do progresso atual */
+    height: inherit;  /* Herda a altura do elemento pai */
+    width: var(--progress);  /* Define a largura com base na variável de progresso */
+    border-radius: 15px;  /* Adiciona bordas arredondadas */
+}
+
+/* Estilizações para o contêiner de progresso */
+#progress-container {
+    padding-bottom: 1em;  /* Adiciona preenchimento na parte inferior */
+    cursor: pointer;  /* Muda o cursor para indicar interatividade */
+}
+
+/* Estilizações para o botão ativo */
+.button-active {
+    color: rgb(0, 183, 107);  /* Define a cor do texto para indicar atividade */
+}
+
+/* Estilizações para a seção de reprodução */
+#play {
+    display: flex;  /* Usa o modelo de layout flexível para a seção de reprodução */
+    flex-direction: column;  /* Define a direção principal como coluna */
+    align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+}
+
+/* Estilizações para os ícones de reprodução */
+#play .bi {
+    margin-top: 10px;  /* Adiciona margem superior */
+    margin-left: 30px;  /* Adiciona margem à esquerda */
+}
+
+/* Estilizações para a caixa de tempo */
+#time-box {
+    display: flex;  /* Usa o modelo de layout flexível para a caixa de tempo */
+    flex-direction: row;  /* Define a direção principal como linha */
+    justify-content: space-between;  /* Distribui o espaço
+
+ entre os elementos */
+    font-size: smaller;  /* Define um tamanho de fonte menor */
+    color: rgb(139, 153, 156);  /* Define uma cor de texto mais clara */
+    padding-top: 5px;  /* Adiciona preenchimento na parte superior */
+}
+
+/* Media queries para responsividade em dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    #below-cover {
+        display: flex;  /* Usa o modelo de layout flexível para a seção abaixo da capa */
+        flex-direction: row;  /* Define a direção principal como linha */
+        justify-content: space-between;  /* Distribui o espaço entre os elementos */
+        align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+        margin: 1em 0 1em 0;  /* Adiciona margens nas direções superior, inferior, direita e esquerda */
+    }
+
+    #button-container {
+        flex-direction: column;  /* Define a direção principal como coluna */
+        align-items: center;  /* Centraliza os itens ao longo do eixo transversal */
+        margin-top: 1em;  /* Adiciona margem superior */
+    }
+
+    #song-name,
+    #song-info {
+        text-align: left;  /* Alinha o texto à esquerda */
+    }
+
+    #progress-bar {
+        margin-top: 2em;  /* Adiciona margem superior */
+    }
+}
+
+/* Media queries para responsividade em dispositivos com largura máxima de 480px */
+@media (max-width: 480px) {
+    #button-container {
+        flex-direction: row;  /* Define a direção principal como linha */
+        justify-content: space-around;  /* Distribui o espaço ao redor dos elementos */
+    }
+
+    #button-navigate {
+        font-size: 2em;  /* Define um tamanho menor para o botão de navegação */
+    }
+
+    .button-biggest {
+        font-size: 3em;  /* Define um tamanho menor para o maior botão */
+    }
+}
